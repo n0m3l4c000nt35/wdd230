@@ -1,0 +1,45 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: pink;
+  padding: 2rem;
+}
+
+nav {
+  background-color: #98FB98;
+  padding: 1rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+main {
+  background-color: #FFA07A;
+  flex: 1;
+  padding: 1rem;
+}
+
+aside {
+  background-color: yellow;
+  width: 200px;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #DEB887;
+  padding: 2rem;
+  text-align: center;
+}
