@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Esteban Zárate">
+  <meta name="description" content="WDD 230 - Web Frontend Development, Esteban Zárate, course assignment portal">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Esteban Zárate - WDD 230 - Web Frontend Development</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/profile.jpg" alt="Profile" width="393" height="281">
+    <span>Esteban Zárate</span>
+  </header>
+  <nav>
+    <a class="active" href="#">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Site Plan</a>
+    <a href="#">Form</a>
+  </nav>
+  <main>
+    <h1>WDD 230: Web Frontend Development</h1>
+    <section class="card">
+      <h2>Learning Activities</h2>
+      <ul>
+        <li>
+          <a href="#">Week 01:</a>
+        </li>
+        <li>
+          <a href="#">Week 02:</a>
+        </li>
+        <li>
+          <a href="#">Week 03:</a>
+        </li>
+        <li>
+          <a href="#">Week 04:</a>
+        </li>
+        <li>
+          <a href="#">Week 05:</a>
+        </li>
+        <li>
+          <a href="#">Week 06:</a>
+        </li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Information</h2>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span> ⭐ Esteban Zárate ⭐ Buenos Aires,
+      Argentina 🇦🇷
+    </p>
+    <p id="lastModified" class="highlighted"></p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+</body>
+
+</html>
