@@ -15,50 +15,88 @@ body {
   font-family: var(--fontFamily);
 }
 
+#mode {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+#mode:hover {
+  transform: scale(1.25);
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 2rem;
-  row-gap: 1rem;
+  gap: 1rem;
   padding: 1.5rem;
   background-color: var(--bgDarkColor);
 }
 
 header img {
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
   box-shadow: 0 0 20px var(--shadowColor);
 }
 
-header span {
+header span:nth-child(2) {
   color: #fff;
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  background: #000;
+header span:last-child {
+  color: #fff;
 }
 
-nav a {
-  flex: 1 1 100%;
+#btnBurguerMenu::before {
+  content: "☰";
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#btnBurguerMenu.open::before {
+  content: "⛌";
+}
+
+nav {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.2s;
+}
+
+nav.open {
+  grid-template-rows: 1fr;
+}
+
+nav ul {
+  overflow: hidden;
+}
+
+ul.menuLinks {
+  background-color: #000;
+}
+
+ul.menuLinks li a {
+  display: block;
   padding: 1rem;
   text-align: center;
   color: #fff;
   font-size: 1.3rem;
 }
 
-nav a.active {
+ul.menuLinks li a.active {
   background-color: #644822;
 }
 
-nav a:hover {
-  background-color: #1f1f1f8a;
+ul.menuLinks li a:hover {
+  background-color: #292929;
 }
 
 main {
@@ -93,13 +131,25 @@ main section h2 {
 main section ul {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
+  row-gap: 0.75rem;
   padding: 1rem;
 }
 
 main section ul li {
   color: #000;
   font-weight: 500;
+}
+
+main section ul li b {
+  font-weight: 700;
+}
+
+main section ul li a {
+  color: #000;
+}
+
+main section ul li a.visited {
+  color: gray;
 }
 
 footer {

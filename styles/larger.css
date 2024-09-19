@@ -1,7 +1,25 @@
 @media screen and (min-width: 680px) {
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #btnBurguerMenu {
+    display: none;
+  }
+
   nav {
-    flex-direction: row;
-    justify-content: space-evenly;
+    grid-template-rows: 1fr;
+  }
+
+  ul.menuLinks,
+  ul.menuLinks.open {
+    display: flex;
+  }
+
+  ul.menuLinks li {
+    flex: 1 1 100%;
   }
 
   main {
