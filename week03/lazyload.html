@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Esteban Zárate">
+  <meta name="description" content="Lazy loading example - WDD 230: Web Frontend Development I">
+  <title>Lazyload Example</title>
+  <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lazyload Example</h1>
+  </header>
+  <main>
+    <img src="//via.placeholder.com/400x600?text=Best+Placeholder+Ever" alt="Image Example" width="400" height="600" loading="lazy">
+    <img src="//via.placeholder.com/400x700?text=Best+Placeholder+Ever" alt="Image Example" width="400" height="600" loading="lazy">
+    <img src="//via.placeholder.com/400x800?text=Best+Placeholder+Ever" alt="Image Example" width="400" height="600" loading="lazy">
+    <img src="//via.placeholder.com/400x900?text=Best+Placeholder+Ever" alt="Image Example" width="400" height="600" loading="lazy">
+    <img src="//via.placeholder.com/400x1000?text=Best+Placeholder+Ever" alt="Image Example" width="400" height="600" loading="lazy">
+    <img src="//via.placeholder.com/400x1100?text=Best+Placeholder+Ever" alt="Image Example" width="400" height="600" loading="lazy">
+  </main>
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span> ⭐ Esteban Zárate ⭐ Buenos Aires,
+      Argentina 🇦🇷
+    </p>
+    <p id="lastModified" class="highlighted"></p>
+  </footer>
+  <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>
