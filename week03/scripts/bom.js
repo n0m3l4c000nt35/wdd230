@@ -9,9 +9,10 @@ $button.addEventListener("click", () => {
     setChapterList();
     $input.value = "";
     $input.focus();
+  } else {
+    alert("Enter Book and Chapter!");
+    $input.focus();
   }
-  alert("Enter Book and Chapter!");
-  $input.focus();
 });
 
 function displayList(item) {
