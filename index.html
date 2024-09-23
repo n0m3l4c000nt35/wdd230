@@ -45,6 +45,14 @@
     </ul>
   </nav>
   <main>
+    <div id="hero">
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+        <source media="(max-width: 960px)" srcset="images/hero-large.webp">
+        <img src="images/accra-ghana-temple.webp" alt="Accra Ghana Temple" loading="lazy">
+      </picture>
+      <p>Accra Ghana Temple</p>
+    </div>
     <h1>WDD 230: Web Frontend Development</h1>
     <section class="card">
       <h2>Learning Activities</h2>
@@ -74,7 +82,14 @@
     </section>
     <section class="card">
       <h2>Information</h2>
+      <p class="visits"></p>
     </section>
+    <div class="iframeContainer">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6563.44519476654!2d-58.666323000000006!3d-34.661708!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1727123640969!5m2!1ses!2sar"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </main>
   <footer>
     <p>

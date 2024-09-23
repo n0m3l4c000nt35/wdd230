@@ -4,6 +4,7 @@ const $btnBurguerMenu = document.querySelector("#btnBurguerMenu");
 const $menuLinks = document.querySelector("#animated");
 const $modeButton = document.querySelector("#mode");
 const $main = document.querySelector("main");
+const $visitsDisplay = document.querySelector(".visits");
 
 const today = new Date();
 
@@ -34,3 +35,14 @@ $modeButton.addEventListener("click", () => {
     $modeButton.textContent = "☀️";
   }
 });
+
+let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
+
+if (numVisits !== 0) {
+  $visitsDisplay.textContent = `Visit Count: ${numVisits}`;
+} else {
+  $visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+numVisits++;
+localStorage.setItem("numVisits", numVisits);

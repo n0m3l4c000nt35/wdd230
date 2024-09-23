@@ -32,4 +32,8 @@
     grid-column: auto;
     box-shadow: 0 0 15px var(--shadowColor);
   }
+
+  .card {
+    margin-inline: unset;
+  }
 }
