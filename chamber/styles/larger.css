@@ -83,6 +83,20 @@
     justify-content: space-evenly;
   }
 
+  #discover {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .image-grid figure {
+    overflow: hidden;
+  }
+
+  .image-grid figure:hover figcaption {
+    transform: translateY(+100%);
+    transition: transform 0.5s;
+  }
+
   .container-footdown {
     text-align: center;
   }

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Esteban Zárate">
+  <meta name="description"
+    content="Welcome to the Ituzaingó Chamber of Commerce. Discover local businesses, upcoming events, and community information.">
+  <meta property="og:title" content="Ituzaingó Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/images/valparaiso-chamber.jpg">
+  <meta property="og:url" content="https://example.com">
+  <title>Ituzaingó Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="images/logo.png" alt="Ituzaingó Chamber of Commerce Logo">
+      <h1>Ituzaingó Chamber of Commerce</h1>
+      <div id="menu-button"></div>
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="discover.html">Discover</a>
+        </li>
+        <li>
+          <a href="directory.html">Directory</a>
+        </li>
+        <li>
+          <a href="join.html">Join</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="discover">
+    <aside class="sidebar">
+      <h2>About Ituzaingó</h2>
+      <p>Ituzaingó is a vibrant city located in the Buenos Aires Province, known for its historical significance and
+        natural beauty. Here are some quick facts about the city:</p>
+      <ul>
+        <li><b>Population:</b> Approximately 170,000</li>
+        <li><b>Established:</b> 1872</li>
+        <li><b>Major Attractions:</b> Parque Leloir, Plaza San Martín, Casa Anchordoqui</li>
+        <li><b>Festivals:</b> Annual Folk Music Festival, Independence Day Celebrations</li>
+        <li><b>Climate:</b> Temperate, with hot summers and mild winters</li>
+      </ul>
+      <h3>Upcoming Events</h3>
+      <p>Explore what's happening in Ituzaingó:</p>
+      <ul>
+        <li><b>October 12:</b> Art Fair at Paseo de los Poetas</li>
+        <li><b>November 5:</b> Food Truck Festival at Parque Leloir</li>
+        <li><b>December 18:</b> Christmas Market at Plaza San Martín</li>
+      </ul>
+    </aside>
+    <div class="gallery">
+      <div class="image-grid">
+        <figure>
+          <img src="images/plaza-san-martin.webp" alt="Plaza San Martín in Ituzaingó" loading="lazy" width="900"
+            height="577">
+          <figcaption>Plaza San Martín, a popular local park in the heart of the city.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/paseo-de-los-poetas.webp" alt="Paseo de los Poetas" loading="lazy" width="1000" height="750">
+          <figcaption>Paseo de los Poetas, a cultural spot with sculptures of famous Argentine poets.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/casa-anchordoqui.webp" alt="Casa Anchordoqui" loading="lazy" width="768" height="1024">
+          <figcaption>Casa Anchordoqui, a historic landmark representing the city's colonial past.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/museo.jpg" alt="Museo Histórico de Ituzaingó" loading="lazy" width="960" height="72">
+          <figcaption>Museo Histórico, where the history of Ituzaingó is preserved.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/parque-leloir.jpg" alt="Parque Leloir in Ituzaingó" loading="lazy" width="1280" height="960">
+          <figcaption>Parque Leloir, a natural reserve and recreation area perfect for outdoor activities.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/iglesia-santa-rita.jpg" alt="Iglesia Santa Rita" loading="lazy" width="1280" height="720">
+          <figcaption>Iglesia Santa Rita, a beautiful church and one of the oldest in the region.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="info">
+      <div>
+        <img src="images/logo.png" alt="Ituzaingó Chamber of Commerce Logo">
+        <div>
+          <p>Ituzaingó</p>
+          <p>Chamber of Commerce</p>
+          <address>
+            10 Fake Street<br>
+            Ituzaingó Fake 999
+          </address>
+        </div>
+      </div>
+      <div>
+        <a href="mailto:info@fakegmail.com">info@fakegmail.com</a>
+        <a href="tel:+(123)1234-5678">+(123) 1234-5678</a>
+        <p>📍 Location Map</p>
+      </div>
+    </div>
+    <p class="container-footdown"><span id="currentYear" class="footdown"></span> <b class="sep">|</b> <span
+        class="footdown"><b>Esteban
+          Zárate</b></span> <b class="sep">|</b>
+      <span class="footdown">WDD 230 Project</span> <b class="sep">|</b>
+      <span id="lastModified" class="footdown"></span>
+    </p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
