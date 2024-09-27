@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Esteban Zárate">
+  <meta name="description" content="WDD 230 - Web Frontend Development, Esteban Zárate, course assignment portal">
+  <meta property="og:title" content="Esteban Zárate - WDD 230 - Web Frontend Development">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Peatonal_Municipalidad_de_Ituzaing%C3%B3.jpg/1280px-Peatonal_Municipalidad_de_Ituzaing%C3%B3.jpg">
+  <meta property="og:url" content="https://n0m3l4c000nt35.github.io/wdd230/">
+  <title>Esteban Zárate - WDD 230 - Web Frontend Development</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <div id="mode">🌙</div>
+  <header>
+    <img src="images/profile.jpg" alt="Profile" width="393" height="281">
+    <span>Esteban Zárate</span>
+    <span id="btnBurguerMenu"></span>
+  </header>
+  <nav id="animated">
+    <ul class="menuLinks">
+      <li>
+        <a class="active" href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="chamber/index.html">Chamber</a>
+      </li>
+      <li>
+        <a href="#">Site Plan</a>
+      </li>
+      <li>
+        <a href="form.html">Form</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <form method="get" action="record.html" class="wf2">
+      <label>Username<input type="text" name="username" id="username" required></label>
+      <label>Password<input type="password" name="password" id="password" pattern="[a-zA-Z0-9]{8,}" required></label>
+      <label>Password repeated for confirmation<input type="password" name="passwordRepeated" id="passwordRepeated"
+          pattern="[a-zA-Z0-9]{8,}" required></label>
+      <p id="errorMessage"></p>
+      <label>Email<input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu"
+          title="Please enter a valid email address" required></label>
+      <label>Page Rating
+        <input type="range" name="range" id="range" min="1" max="10" step="1">
+      </label>
+      <p id="rangevalue"></p>
+      <input type="submit" value="Register My User">
+    </form>
+  </main>
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span> ⭐ Esteban Zárate ⭐ Buenos Aires,
+      Argentina 🇦🇷
+    </p>
+    <p id="lastModified" class="highlighted"></p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/form.js"></script>
+</body>
+
+</html>

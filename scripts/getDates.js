@@ -6,6 +6,7 @@ const $modeButton = document.querySelector("#mode");
 const $main = document.querySelector("main");
 const $visitsDisplay = document.querySelector(".visits");
 
+let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
 const today = new Date();
 
 $year.innerHTML = today.getFullYear();
@@ -36,13 +37,12 @@ $modeButton.addEventListener("click", () => {
   }
 });
 
-let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
-
-if (numVisits !== 0) {
-  $visitsDisplay.textContent = `Visit Count: ${numVisits}`;
-} else {
-  $visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+if ($visitsDisplay) {
+  if (numVisits !== 0) {
+    $visitsDisplay.textContent = `Visit Count: ${numVisits}`;
+  } else {
+    $visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+  }
+  numVisits++;
+  localStorage.setItem("numVisits", numVisits);
 }
-
-numVisits++;
-localStorage.setItem("numVisits", numVisits);
