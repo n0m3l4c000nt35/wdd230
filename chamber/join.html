@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Esteban Zárate">
+  <meta name="description"
+    content="Welcome to the Ituzaingó Chamber of Commerce. Discover local businesses, upcoming events, and community information.">
+  <meta property="og:title" content="Ituzaingó Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/images/valparaiso-chamber.jpg">
+  <meta property="og:url" content="https://example.com">
+  <title>Ituzaingó Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="images/logo.png" alt="Ituzaingó Chamber of Commerce Logo">
+      <h1>Ituzaingó Chamber of Commerce</h1>
+      <div id="menu-button"></div>
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="discover.html">Discover</a>
+        </li>
+        <li>
+          <a href="directory.html">Directory</a>
+        </li>
+        <li>
+          <a href="join.html">Join</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form method="get" action="thankyou.html" class="joinForm">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>First name*
+          <input type="text" name="firstName" id="firstName" required autofocus>
+        </label>
+        <label>Last name*
+          <input type="text" name="lastName" id="lastName" required>
+        </label>
+        <label>Title*
+          <input type="text" name="title" id="title" pattern="[a-zA-Z_-\s]{7,}" required>
+        </label>
+        <label>Email*
+          <input type="email" name="email" id="email" placeholder="email@example.com" required>
+        </label>
+        <label>Phone*
+          <input type="tel" name="phone" id="phone" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Business Information</legend>
+        <label>Business*
+          <input type="text" name="business" id="business" required>
+        </label>
+        <div>Membership level</div>
+        <label>
+          <input type="radio" name="membership" value="np" id="np">Non profit Membership
+        </label>
+        <label>
+          <input type="radio" name="membership" value="bronze" id="bronze">Bronze Membership
+        </label>
+        <label>
+          <input type="radio" name="membership" value="silver" id="silver">Silver Membership
+        </label>
+        <label>
+          <input type="radio" name="membership" value="gold" id="gold">Gold Membership
+        </label>
+        <label>Description
+          <textarea name="businessDescription" id="businessDescription" rows="5"></textarea>
+        </label>
+        <input type="hidden" name="timestamp" id="timestamp">
+      </fieldset>
+      <div>
+        <input type="submit" value="Join The Chamber">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div id="info">
+      <div>
+        <img src="images/logo.png" alt="Ituzaingó Chamber of Commerce Logo" width="50" height="50">
+        <div>
+          <p>Ituzaingó</p>
+          <p>Chamber of Commerce</p>
+          <address>
+            10 Fake Street<br>
+            Ituzaingó Fake 999
+          </address>
+        </div>
+      </div>
+      <div>
+        <a href="mailto:info@fakegmail.com">info@fakegmail.com</a>
+        <a href="tel:+(123)1234-5678">+(123) 1234-5678</a>
+        <p>📍 Location Map</p>
+      </div>
+    </div>
+    <p class="container-footdown"><span id="currentYear" class="footdown"></span> <b class="sep">|</b> <span
+        class="footdown"><b>Esteban
+          Zárate</b></span> <b class="sep">|</b>
+      <span class="footdown">WDD 230 Project</span> <b class="sep">|</b>
+      <span id="lastModified" class="footdown"></span>
+    </p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

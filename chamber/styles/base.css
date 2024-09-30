@@ -169,7 +169,7 @@ footer {
 
 #info div:first-child img {
   width: 50px;
-  height: 50px;
+  height: auto;
 }
 
 #info div:first-child p {
@@ -188,7 +188,7 @@ footer address {
 
 #info div:last-child a {
   display: block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
   color: #fff;
 }
 
@@ -254,4 +254,94 @@ a {
 img {
   width: 100%;
   height: auto;
+}
+
+.joinForm {
+  padding: 1rem;
+}
+
+.joinForm fieldset {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.joinForm legend {
+  padding-inline: .5rem;
+  color: var(--bgDarkColor);
+  font-weight: 500;
+}
+
+.joinForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: .9rem;
+  color: var(--accentColor);
+}
+
+.joinForm div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: .9rem;
+  color: var(--bgDarkColor);
+}
+
+.joinForm input[type="text"],
+.joinForm input[type="email"],
+.joinForm input[type="tel"],
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: .75rem;
+  color: var(--bgDarkColor);
+}
+
+.joinForm input[type="text"]:required:focus,
+.joinForm input[type="email"]:required:focus,
+.joinForm input[type="tel"]:required:focus {
+  border-right: 4px solid red;
+  outline: 0.5px solid #aaa;
+}
+
+.joinForm input[type="text"]:required:focus:valid,
+.joinForm input[type="email"]:required:focus:valid,
+.joinForm input[type="tel"]:required:focus:valid {
+  border-right: 4px solid rgb(0, 177, 0);
+}
+
+.joinForm textarea {
+  resize: none;
+}
+
+.joinForm input[type="radio"] {
+  margin-right: 6px;
+}
+
+.joinForm div:last-child {
+  padding: 1rem;
+}
+
+.joinForm input[type="submit"] {
+  display: block;
+  border: none;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 100%;
+  max-width: 400px;
+  background-image: linear-gradient(#aaa, var(--bgDarkColor));
+  color: #fff;
+  box-shadow: 1px 1px 4px #999;
+  cursor: pointer;
+}
+
+.joinForm input:required {
+  border-right: 4px solid red;
+}
+
+.joinForm input:required:valid {
+  border-right: 4px solid rgb(0, 177, 0);
 }
