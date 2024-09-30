@@ -109,4 +109,9 @@
     display: inline-block;
     margin-inline: 0.5rem;
   }
+
+  .radioContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }

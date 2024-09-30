@@ -42,3 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem(lastVisitKey, now.toString());
   }
 });
+
+const $timestampInput = document.querySelector("#timestamp");
+
+if ($timestampInput) {
+  $timestampInput.setAttribute("value", Date.now());
+}
