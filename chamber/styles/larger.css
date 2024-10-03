@@ -89,11 +89,17 @@
   }
 
   .image-grid figure {
+    display: block;
     overflow: hidden;
   }
 
+  .image-grid figure figcaption {
+    width: 100%;
+    transform: translateY(100%);
+  }
+
   .image-grid figure:hover figcaption {
-    transform: translateY(+100%);
+    transform: translateY(calc(0% - 0.25rem));
     transition: transform 0.5s;
   }
 
