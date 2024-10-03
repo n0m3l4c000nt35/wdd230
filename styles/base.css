@@ -193,6 +193,18 @@ main section ul li a.visited {
   margin-right: 1rem;
 }
 
+.weatherContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#iconWeather {
+  width: 3rem;
+  height: auto;
+}
+
 .visits {
   padding: 1rem;
   text-align: center;

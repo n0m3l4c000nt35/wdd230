@@ -78,7 +78,8 @@
         <li>
           <b>Week 05</b>: <a href="https://codepen.io/Esteban-the-decoder/pen/KKOVJRZ" target="_blank">CSS
             Pseudo-elements</a> | <a href="week05/new-ward-members.json" target="_blank">JSON</a> | <a
-            href="week05/prophets.html" target="_blank">The Fetch API</a> | <a href="week05/weather.html" target="_blank">Consuming a Weather API</a>
+            href="week05/prophets.html" target="_blank">The Fetch API</a> | <a href="week05/weather.html"
+            target="_blank">Consuming a Weather API</a>
         </li>
         <li>
           <b>Week 06</b>:
@@ -87,6 +88,11 @@
     </section>
     <section class="card">
       <h2>Information</h2>
+      <div class="weatherContainer">
+        <img id="iconWeather">
+        <span id="temperatureWeather"></span>&nbsp;-&nbsp;
+        <span id="descriptionWeather"></span>
+      </div>
       <p class="visits"></p>
     </section>
     <div class="iframeContainer">
@@ -104,6 +110,8 @@
     <p id="lastModified" class="highlighted"></p>
   </footer>
   <script src="scripts/getDates.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/links.js"></script>
 </body>
 
 </html>
