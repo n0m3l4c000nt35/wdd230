@@ -84,6 +84,7 @@ main {
 
 #hero {
   display: grid;
+  margin-bottom: 1rem;
 }
 
 #hero img {
@@ -122,16 +123,12 @@ main {
 }
 
 .section {
-  margin-bottom: 0.5rem;
+  padding: 1rem;
 }
 
 .section:nth-child(2),
 .section:nth-child(3) {
   background-color: var(--bgSecondColor);
-}
-
-.section:nth-child(n+2) {
-  padding: 1rem;
 }
 
 .section:nth-child(n+2) h2 {
@@ -140,11 +137,22 @@ main {
   padding-bottom: 0.2rem;
 }
 
-#spotlights div {
-  margin-top: 1rem;
+#events {
+  margin-inline: 1rem;
   margin-bottom: 1rem;
+}
+
+#weather {
+  margin-inline: 1rem;
+}
+
+#spotlights div {
   padding: 1rem;
   background-color: var(--bgSecondColor);
+}
+
+.spotlight {
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -346,13 +354,18 @@ textarea {
   border-right: 4px solid rgb(0, 177, 0);
 }
 
+.directoryContainer {
+  padding: 1rem;
+}
+
+.directoryContainer h2 {
+  margin-bottom: 1rem;
+}
+
 #directory {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding: 1rem;
 }
 
 .memberCard {

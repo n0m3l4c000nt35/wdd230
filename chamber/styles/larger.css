@@ -39,7 +39,6 @@
 
   main {
     display: grid;
-    gap: 0.5rem;
   }
 
   #hero {
@@ -48,6 +47,8 @@
 
   #events {
     grid-column: 1 / 3;
+    margin-right: unset;
+    margin-bottom: unset;
   }
 
   #weather {
@@ -58,6 +59,7 @@
     grid-column: 1 / 4;
     display: flex;
     column-gap: 0.5rem;
+    margin: 1rem;
     padding: unset;
     background-color: unset;
   }
@@ -119,5 +121,9 @@
   .radioContainer {
     display: grid;
     grid-template-columns: auto auto;
+  }
+
+  #directory {
+    padding: unset;
   }
 }
