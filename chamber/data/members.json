@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Tech Solutions",
+      "address": "Av. Rivadavia 1250, Ituzaingó, Buenos Aires",
+      "phone": "+54 11 1234 5678",
+      "website": "https://techsolutions.com.ar",
+      "image": "tech-solutions.png",
+      "membership_level": "Gold",
+      "description": "Innovative IT solutions for small businesses."
+    },
+    {
+      "name": "Green Fields Landscaping",
+      "address": "Belgrano 450, Ituzaingó, Buenos Aires",
+      "phone": "+54 11 2233 4455",
+      "website": "https://greenfields.com.ar",
+      "image": "green-fields.png",
+      "membership_level": "Silver",
+      "description": "Landscaping and gardening services with a focus on sustainability."
+    },
+    {
+      "name": "Café Aroma",
+      "address": "Calle Olazábal 850, Ituzaingó, Buenos Aires",
+      "phone": "+54 11 9876 5432",
+      "website": "https://cafearoma.com.ar",
+      "image": "cafe-aroma.png",
+      "membership_level": "Bronze",
+      "description": "Cozy café offering a wide selection of local pastries and coffee."
+    },
+    {
+      "name": "AutoFix Mechanics",
+      "address": "Sarmiento 1200, Ituzaingó, Buenos Aires",
+      "phone": "+54 11 3322 7766",
+      "website": "https://autofix.com.ar",
+      "image": "autofix.png",
+      "membership_level": "Gold",
+      "description": "Expert automotive repair services."
+    },
+    {
+      "name": "Health and Wellness Center",
+      "address": "Av. Perón 950, Ituzaingó, Buenos Aires",
+      "phone": "+54 11 8765 4321",
+      "website": "https://healthwellness.com.ar",
+      "image": "health-wellness.png",
+      "membership_level": "Silver",
+      "description": "Holistic health services including therapy and yoga."
+    },
+    {
+      "name": "Creative Print Studio",
+      "address": "Calle Moreno 775, Ituzaingó, Buenos Aires",
+      "phone": "+54 11 4455 6677",
+      "website": "https://creativeprint.com.ar",
+      "image": "creative-print.png",
+      "membership_level": "Bronze",
+      "description": "High-quality printing and design services."
+    },
+    {
+      "name": "EcoSmart Home",
+      "address": "Calle Alsina 1025, Ituzaingó, Buenos Aires",
+      "phone": "+54 11 9988 7766",
+      "website": "https://ecosmart.com.ar",
+      "image": "ecosmart-home.png",
+      "membership_level": "Gold",
+      "description": "Energy-efficient home solutions."
+    }
+  ]
+}
