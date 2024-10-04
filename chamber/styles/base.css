@@ -172,7 +172,7 @@ footer {
   justify-content: center;
   align-items: center;
   column-gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #info div:first-child img {
@@ -227,13 +227,20 @@ footer address {
   margin-bottom: 0.5rem;
 }
 
+.image-grid figure:last-child {
+  margin-bottom: unset;
+}
+
 .image-grid figure figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0.5rem;
+  width: 100%;
+  padding: 1rem;
   backdrop-filter: blur(5px);
+  background-color: #000000aa;
   color: #fff;
+  font-size: clamp(.75rem, 5vw, 1.2rem);
 }
 
 .footdown {
@@ -362,19 +369,76 @@ textarea {
   margin-bottom: 1rem;
 }
 
-#directory {
+.buttonsView {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.buttonsView button {
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: .4rem .8rem;
+  cursor: pointer;
+}
+
+.buttonsView button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.directoryGridView {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
-.memberCard {
+.directoryListView {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: .75rem;
+}
+
+.directoryListView .memberCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: .5rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.directoryListView .memberCard:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.directoryListView .memberCard:nth-child(even) {
+  background-color: #999;
+}
+
+.directoryListView .memberCard img {
+  display: none;
+}
+
+.directoryListView .memberCard h2 {
+  margin-bottom: unset;
+  font-size: .75rem;
+  text-wrap: wrap;
+}
+
+.directoryListView .memberCard a {
+  color: #000;
+}
+
+.directoryListView .memberCard a:hover {
+  color: #444;
+}
+
+.directoryGridView .memberCard {
   position: relative;
   min-height: 300px;
   border: 1px solid #aaa;
 }
 
-.memberCard h2 {
+.directoryGridView .memberCard h2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -386,13 +450,13 @@ textarea {
   text-align: center;
 }
 
-.memberCard img {
+.directoryGridView .memberCard img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.memberCard p {
+.directoryGridView .memberCard p {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -407,11 +471,11 @@ textarea {
   text-align: center;
 }
 
-.phone {
+.directoryGridView .memberCard .phone {
   font-size: 0.8rem;
 }
 
-.memberCard a {
+.directoryGridView .memberCard a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -423,6 +487,6 @@ textarea {
   color: #fff;
 }
 
-.memberCard a:hover {
+.directoryGridView .memberCard a:hover {
   border-color: #ffffff70;
 }

@@ -85,9 +85,14 @@
     justify-content: space-evenly;
   }
 
+  #info div:first-child {
+    margin-bottom: unset;
+  }
+
   #discover {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    column-gap: 1rem;
   }
 
   .image-grid figure {
@@ -123,7 +128,7 @@
     grid-template-columns: auto auto;
   }
 
-  #directory {
+  .directoryGridView {
     padding: unset;
   }
 }
