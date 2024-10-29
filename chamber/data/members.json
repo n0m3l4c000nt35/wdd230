@@ -6,7 +6,7 @@
       "phone": "+54 11 1234 5678",
       "website": "https://techsolutions.com.ar",
       "image": "tech-solutions.webp",
-      "membership_level": "Gold",
+      "membershipLevel": "Gold",
       "description": "Innovative IT solutions for small businesses."
     },
     {
@@ -15,7 +15,7 @@
       "phone": "+54 11 2233 4455",
       "website": "https://greenfields.com.ar",
       "image": "green-fields.webp",
-      "membership_level": "Silver",
+      "membershipLevel": "Silver",
       "description": "Landscaping and gardening services with a focus on sustainability."
     },
     {
@@ -24,7 +24,7 @@
       "phone": "+54 11 9876 5432",
       "website": "https://cafearoma.com.ar",
       "image": "cafe-aroma.webp",
-      "membership_level": "Bronze",
+      "membershipLevel": "Bronze",
       "description": "Cozy café offering a wide selection of local pastries and coffee."
     },
     {
@@ -33,7 +33,7 @@
       "phone": "+54 11 3322 7766",
       "website": "https://autofix.com.ar",
       "image": "autofix.webp",
-      "membership_level": "Gold",
+      "membershipLevel": "Gold",
       "description": "Expert automotive repair services."
     },
     {
@@ -42,7 +42,7 @@
       "phone": "+54 11 8765 4321",
       "website": "https://healthwellness.com.ar",
       "image": "health-wellness.webp",
-      "membership_level": "Silver",
+      "membershipLevel": "Silver",
       "description": "Holistic health services including therapy and yoga."
     },
     {
@@ -51,7 +51,7 @@
       "phone": "+54 11 4455 6677",
       "website": "https://creativeprint.com.ar",
       "image": "creative-print.webp",
-      "membership_level": "Bronze",
+      "membershipLevel": "Bronze",
       "description": "High-quality printing and design services."
     },
     {
@@ -60,7 +60,7 @@
       "phone": "+54 11 9988 7766",
       "website": "https://ecosmart.com.ar",
       "image": "ecosmart-home.webp",
-      "membership_level": "Gold",
+      "membershipLevel": "Gold",
       "description": "Energy-efficient home solutions."
     }
   ]
