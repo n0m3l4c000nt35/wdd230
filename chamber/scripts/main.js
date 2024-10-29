@@ -61,30 +61,41 @@ async function getWeatherData() {
 
     const currentTemp = data.list[0].main.temp;
     const description = data.list[0].weather[0].description;
-    document.querySelector("#current-temp").textContent = `${currentTemp.toFixed(1)}°C`;
-    document.querySelector("#weather-desc").textContent = description;
+    document.querySelector("#weather").innerHTML += `<p>${currentTemp.toFixed(1)}°C</p>`;
+    document.querySelector("#weather").innerHTML += `<p>${description}</p>`;
 
     const forecast = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(1, 4);
-    const forecastContainer = document.querySelector("#forecast");
+    const forecastContainer = document.createElement("div");
     forecast.forEach(day => {
       const date = new Date(day.dt * 1000).toLocaleDateString("es-AR", { weekday: "short" });
       const temp = day.main.temp;
       forecastContainer.innerHTML += `<p>${date}: ${temp.toFixed(1)}°C</p>`;
     });
+    document.querySelector("#weather").appendChild(forecastContainer);
   } catch (error) {
-    console.error("Error fetching weather data:", error);
+    const weatherContainer = document.querySelector("#weather");
+    const errorContent = document.createElement("p");
+    errorContent.textContent = "Error fetching weather data";
+    weatherContainer.appendChild(errorContent);
   }
 }
-
-getWeatherData();
+if (window.location.pathname.includes("index.html")) {
+  document.getElementById("close-banner").addEventListener("click", function () {
+    document.getElementById("event-banner").style.display = "none";
+  });
+  getWeatherData();
+  loadSpotlights();
+  showEventBanner();
+}
 
 async function loadSpotlights() {
   const response = await fetch("https://n0m3l4c000nt35.github.io/wdd230/chamber/data/members.json");
   const data = await response.json();
   const qualifiedMembers = data.members.filter(
-    member => member.membershipLevel === "silver" || member.membershipLevel === "gold"
+    member => member.membershipLevel === "Silver" || member.membershipLevel === "Gold"
   );
-  const spotlights = document.querySelector("#spotlights");
+
+  const spotlights = document.querySelector("#spotlightsContainer");
   spotlights.innerHTML = "";
 
   for (let i = 0; i < 3; i++) {
@@ -95,14 +106,12 @@ async function loadSpotlights() {
         <div class="spotlight">
           <h3>${member.name}</h3>
           <p>${member.description}</p>
-          <a href="${member.website}">Website</a>
+          <a href="${member.website}" target="_blank">Website</a>
         </div>
       `;
     }
   }
 }
-
-loadSpotlights();
 
 function showEventBanner() {
   const today = new Date().getDay();
@@ -110,9 +119,3 @@ function showEventBanner() {
     document.getElementById("event-banner").style.display = "block";
   }
 }
-
-document.getElementById("close-banner").addEventListener("click", function () {
-  document.getElementById("event-banner").style.display = "none";
-});
-
-showEventBanner();

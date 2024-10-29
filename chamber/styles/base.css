@@ -10,6 +10,29 @@ body {
   font-family: var(--fontFamily);
 }
 
+.event-banner {
+  padding: 1rem;
+  background-color: var(--bgSecondColor);
+}
+
+.event-banner p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.event-banner button {
+  display: block;
+  border: none;
+  margin-inline: auto;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+.event-banner button:hover {
+  background-color: #444;
+  color: white;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -146,12 +169,18 @@ main {
   margin-inline: 1rem;
 }
 
-#spotlights div {
+#spotlights {
+  margin: 1rem;
   padding: 1rem;
   background-color: var(--bgSecondColor);
 }
 
-.spotlight {
+#spotlights h2 {
+  padding-bottom: 0.5rem;
+}
+
+.spotlight:first-child,
+.spotlight:nth-child(2) {
   margin-bottom: 1rem;
 }
 
