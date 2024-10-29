@@ -81,7 +81,6 @@ getWeatherData();
 async function loadSpotlights() {
   const response = await fetch("https://n0m3l4c000nt35.github.io/wdd230/chamber/data/members.json");
   const data = await response.json();
-  console.log(data.members);
   const qualifiedMembers = data.members.filter(
     member => member.membershipLevel === "silver" || member.membershipLevel === "gold"
   );
