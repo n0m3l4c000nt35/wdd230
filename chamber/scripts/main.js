@@ -111,7 +111,7 @@ async function loadSpotlights() {
         <div class="spotlight">
           <h3>${member.name}</h3>
           <p>${member.description}</p>
-          <a href="${member.website}" target="_blank">Website</a>
+          <a class="spotlight-link" href="${member.website}" target="_blank">Website</a>
         </div>
       `;
     }

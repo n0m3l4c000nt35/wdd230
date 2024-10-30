@@ -184,6 +184,16 @@ main {
   margin-bottom: 1rem;
 }
 
+.spotlight-link {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--bgDarkColor);
+}
+
+.spotlight-link:hover {
+  color: black;
+}
+
 .forecast {
   display: flex;
   justify-content: space-between;
