@@ -6,7 +6,7 @@ const $menuLinks = document.querySelector("#navbar");
 const lat = "-34.66";
 const lon = "-58.67";
 const appid = "6cb1908f96a8d0de94dc16dd4b788fe2";
-const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${appid}`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${appid}`;
 
 const today = new Date();
 
@@ -61,15 +61,20 @@ async function getWeatherData() {
 
     const currentTemp = data.list[0].main.temp;
     const description = data.list[0].weather[0].description;
-    document.querySelector("#weather").innerHTML += `<p>${currentTemp.toFixed(1)}°C</p>`;
-    document.querySelector("#weather").innerHTML += `<p>${description}</p>`;
+    document.querySelector("#weather").innerHTML += `<p><b>Current Weather</b>: ${currentTemp.toFixed(1)}°C</p>`;
+    document.querySelector(
+      "#weather"
+    ).innerHTML += `<p><b>Description</b>: <span style="text-transform: capitalize;">${description}</span></p>`;
 
     const forecast = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(1, 4);
     const forecastContainer = document.createElement("div");
+    forecastContainer.classList.add("forecast");
     forecast.forEach(day => {
-      const date = new Date(day.dt * 1000).toLocaleDateString("es-AR", { weekday: "short" });
+      const date = new Date(day.dt * 1000).toLocaleDateString("en-US", { weekday: "short" });
       const temp = day.main.temp;
-      forecastContainer.innerHTML += `<p>${date}: ${temp.toFixed(1)}°C</p>`;
+      forecastContainer.innerHTML += `<div class="forecast-item"><h3 class="forecast-title">${date}</h3><p>${temp.toFixed(
+        1
+      )}°C</p></div>`;
     });
     document.querySelector("#weather").appendChild(forecastContainer);
   } catch (error) {

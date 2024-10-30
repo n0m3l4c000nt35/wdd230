@@ -184,6 +184,19 @@ main {
   margin-bottom: 1rem;
 }
 
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.forecast-title {
+  margin-bottom: 0.3rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 footer {
   padding: 1rem;
   background-color: var(--bgDarkColor);
